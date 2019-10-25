@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This document defines default configuration for *sys.application.filecenter* plugin.-->
+<package name="SDKTraining.TP7015" provider="vdocsoftware.com" version="1.0">
+  <label>SDKTraining.TP7015.label</label>
+  <description>SDKTraining.TP7015.description</description>
+  <runtime />
+  <depends />
+  <components>
+  
+  	<!-- TODO You can define here your element with configuration and navigation to "simple01.view" -->
+  	
+  </components>
+  <lists>
+  </lists>
+</package>

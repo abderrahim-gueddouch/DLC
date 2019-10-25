@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- In order to add or overwrite screens from XML definitions, please, -->
+<!-- create your own XML definition file (e.i. project.xml)". -->
+<definition name="VDoc Process Java - Custom">
+
+	<screens>
+	
+		<wizard name="simple01" action="browse" label="LG_TP70121_WIZARD_LABEL" information="LG_TP70121_WIZARD_INFORMATION" provider="com.vdoc.student.level2.tp70121.providers.SimpleWizardProvider" >
+			<pages>
+				<page name="page1" label="LG_TP70121_WIZARD_PAGE1_LABEL" information="LG_TP70121_WIZARD_PAGE1_INFORMATION" default="true">
+					<fields>
+						<field name="fldFile" label="" ctrl="com.axemble.vdp.ui.core.document.fields.MultipleFileField" min-file-number="1" max-file-number="1" supported-extensions="jpg;gif" />
+					</fields>
+				</page>
+				<page name="page2" label="LG_TP70121_WIZARD_PAGE2_LABEL" information="LG_TP70121_WIZARD_PAGE2_INFORMATION" >
+					<fields>
+					</fields>
+				</page>
+			</pages>
+		</wizard>
+
+	</screens>
+
+</definition>

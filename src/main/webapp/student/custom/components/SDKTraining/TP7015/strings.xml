@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<res>
+    <id value="SDKTraining.TP7015.label">
+        <lang flag="a" value="fr">Formation SDK TP7015</lang>
+        <lang flag="a" value="en">SDKTraining TP7015</lang>
+        <lang flag="a" value="de">SDKTraining TP7015</lang>
+    </id>
+    <id value="SDKTraining.TP7015.description">
+        <lang flag="a" value="fr"/>
+        <lang flag="a" value="en"/>
+        <lang flag="a" value="de"/>
+    </id>
+    <id value="ezs.component.SDKTraining.TP7015.DirectoryUsersView.label">
+        <lang flag="a" value="fr">Affiche la vue du TP7015</lang>
+        <lang flag="a" value="en">Display view of TP7015</lang>
+        <lang flag="a" value="de">Display view of TP7015</lang>
+    </id>
+    <id value="ezs.component.SDKTraining.TP7015.DirectoryUsersView.description">
+        <lang flag="a" value="fr"></lang>
+        <lang flag="a" value="en"></lang>
+        <lang flag="a" value="de"></lang>
+    </id>
+    <id value="ezs.component.SDKTraining.TP7015.DirectoryUsersView.groupName.label">
+        <lang flag="a" value="fr">Nom du groupe filtre</lang>
+        <lang flag="a" value="en">Name of filter group</lang>
+        <lang flag="a" value="de">Name of filter group</lang>
+    </id>
+    <id value="ezs.component.SDKTraining.TP7015.DirectoryUsersView.groupName.description">
+        <lang flag="a" value="fr"/>
+        <lang flag="a" value="en"/>
+        <lang flag="a" value="de"/>
+    </id>
+</res>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- In order to add or overwrite screens from XML definitions, please, -->
+<!-- create your own XML definition file (e.i. project.xml)". -->
+<definition name="VDoc Process Java - Custom">
+
+	<screens>
+	
+		<view name="simple01" action="view" 
+			label="LG_TP7014_VIEW_LABEL" 
+			provider="com.vdoc.student.level2.tp7014.view.providers.DirectoryUsersViewProvider" 
+			selectable="true"  paginable="true" filterable="true">
+		</view>
+		
+	</screens>
+
+</definition>

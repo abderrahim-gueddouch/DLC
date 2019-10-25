@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<!--
+================================================================================== 
+== Build File for VDoc - Generic VDoc Ant Build (2012)
+==================================================================================
+-->
+
+<project name="SDK TRAINING" default="copy-all" basedir=".">
+	<!--
+    ================================================================================== 
+    == Variable definition
+    ==================================================================================
+    -->
+	<property file="buildVdoc.properties" />
+
+	<property name="custom" value="${VDOC_HOME}/custom" />
+	<property name="vdoc.ear" value="${VDOC_HOME}/JBoss/server/all/deploy/vdoc.ear" />
+
+	<target name="copy-jar">
+		<!-- create JAR and deploy to "custom/lib" -->
+		<jar destfile="output/${JAR_NAME}" basedir="target" />
+		<copy todir="${custom}/lib" overwrite="true">
+			<fileset dir="output">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+	</target>
+
+
+	<target name="copy-custom-student-webapp">
+		<!-- deploy local custom content to custom folder -->
+		<copy todir="${custom}" failonerror="false">
+			<fileset dir="${LOCAL_CUSTOM}" />
+		</copy>
+
+		<!-- to avoid an applyconfig, we deploy to EAR content too ! -->
+		<!-- deploy lib to "vdoc.ear/lib" -->
+		<copy todir="${vdoc.ear}/lib/" overwrite="true">
+			<fileset dir="output">
+				<include name="*.jar" />
+			</fileset>
+		</copy>
+		<!-- deploy local custom folder (except webapp) to "WEB-INF/storage/custom" 
+		<copy todir="${vdoc.ear}/vdoc.war/WEB-INF/storage/custom/" overwrite="true">
+			<fileset dir="${LOCAL_CUSTOM}">
+				<include name="**/*" />
+				<exclude name="**/webapp/**" />
+			</fileset>
+		</copy>
+		 deploy local custom webapp to "vdoc.war"
+		<copy todir="${vdoc.ear}/vdoc.war/" overwrite="true">
+			<fileset dir="${LOCAL_CUSTOM}/webapp">
+				<include name="**/*" />
+			</fileset>
+		</copy> -->
+	</target>
+
+
+	<target name="copy-all" depends="copy-jar, copy-custom-student-webapp" />
+</project>

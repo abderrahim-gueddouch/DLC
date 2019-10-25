@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<res>
+	<id value="LG_TEMPLATE_LOCAL">
+		<lang flag="1" value="en">Wrench</lang>
+		<lang flag="1" value="fr">Clé à molette</lang>
+		<lang flag="1" value="de">Schraubenschlüssel</lang>
+	</id>
+</res>
